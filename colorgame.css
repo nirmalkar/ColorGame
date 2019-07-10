@@ -19,7 +19,7 @@ h1{
 
 }
 #message{
-    color:black;
+    color: white;
     
 }
 #stripe{
@@ -27,4 +27,7 @@ h1{
     background: white;
     text-align: center;
     /* color: black; */
+}
+button{
+    background: white;
 }

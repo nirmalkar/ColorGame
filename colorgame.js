@@ -14,18 +14,17 @@ var resetButton =document.querySelector("#reset");
 //reset button
 resetButton.addEventListener("click",function(){
 //generate all new colors
-var colors = generateRandomColors(6);
+colors = generateRandomColors(6);
 //pick a new random color from array
 pickedColor = pickColor();
 // change 
 upadateHeading.textContent = pickedColor;
 
-
 //change colors of squares
 for(var i=0; i<squares.length; i++){
-	squares[i].style.backgroundColor = colors[i];
+squares[i].style.backgroundColor = colors[i];
 }
-
+h1.style.backgroundColor = "#232323"
 }); 
 for (var i = 0; i < squares.length; i++){
     // add colors to the squares
@@ -39,6 +38,7 @@ for (var i = 0; i < squares.length; i++){
 	//compare color of clicked square with picked color
     if (clickedColor === pickedColor){
 		displayMessage.textContent = " Correct";
+		resetButton.textContent = "Play Again"
 		changeColors(clickedColor);
 		h1.style.backgroundColor = clickedColor;
 		} else{
