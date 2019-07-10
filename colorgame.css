@@ -19,6 +19,12 @@ h1{
 
 }
 #message{
-    color: white;
+    color:black;
     
+}
+#stripe{
+    height: 30px;
+    background: white;
+    text-align: center;
+    /* color: black; */
 }

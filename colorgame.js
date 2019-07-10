@@ -8,6 +8,25 @@ var upadateHeading = document.querySelector("#updateHeading")
 var displayMessage = document.querySelector("#message");
     upadateHeading.textContent = pickedColor;
 var h1 = document.querySelector("h1");    
+var resetButton =document.querySelector("#reset");
+
+
+//reset button
+resetButton.addEventListener("click",function(){
+//generate all new colors
+var colors = generateRandomColors(6);
+//pick a new random color from array
+pickedColor = pickColor();
+// change 
+upadateHeading.textContent = pickedColor;
+
+
+//change colors of squares
+for(var i=0; i<squares.length; i++){
+	squares[i].style.backgroundColor = colors[i];
+}
+
+}); 
 for (var i = 0; i < squares.length; i++){
     // add colors to the squares
     squares[i].style.backgroundColor = colors[i];
