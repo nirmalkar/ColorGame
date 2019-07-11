@@ -52,7 +52,9 @@ button{
     font-size: inherit;
     transition: all .5s;
     -webkit-transition:transition:all 0.5s; 
-    -moz-transition:transition:all 0.5s; 
+    -moz-transition:transition:all 0.5s;
+    outline:none;
+
 }
 
 .selected{

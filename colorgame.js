@@ -52,7 +52,11 @@ colors = generateRandomColors(numSquares);
 
 //reset button
 resetButton.addEventListener("click",function(){
+	//making text content blank
 	displayMessage.textContent = " ";
+	//changing Try Again text to New Color
+	this.textContent = "New Color"
+
 //generate all new colors
 numSquares = 6;
 colors = generateRandomColors(numSquares);
@@ -77,6 +81,8 @@ for (var i = 0; i < squares.length; i++){
     // grab color of clicked square 
 	   var clickedColor = this.style.backgroundColor;
 	   
+
+	//where USER wins the game!!  
 	//compare color of clicked square with picked color
     if (clickedColor === pickedColor){
 		displayMessage.textContent = " Correct!!";
