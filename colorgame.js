@@ -18,6 +18,7 @@ var hardBtn = document.querySelector("#hardBtn");
 
 //easy
 easyBtn.addEventListener("click",function(){
+	displayMessage.textContent = " ";
 	hardBtn.classList.remove("selected");
 	easyBtn.classList.add("selected");
 	numSquares = 3;
@@ -34,6 +35,7 @@ easyBtn.addEventListener("click",function(){
 		}
 });
 hardBtn.addEventListener("click",function(){
+	displayMessage.textContent = " ";
 easyBtn.classList.remove("selected");
 hardBtn.classList.add("selected");
 numSquares = 6;
